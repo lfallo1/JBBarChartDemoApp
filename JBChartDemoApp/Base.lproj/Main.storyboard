@@ -23,35 +23,46 @@
                                     <rect key="frame" x="-2" y="63" width="405" height="334"/>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NK-Ir-ErP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywn-JX-SdR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="filter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="474" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="512" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="addMorePeople:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bHL-bS-opJ"/>
+                                    <action selector="filterButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sCD-XV-ce2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Filter by age" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2Mk-UB-CuF">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="242" y="513" width="97" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="8Gu-ZP-378"/>
-                                <exclude reference="8NK-Ir-ErP"/>
+                                <exclude reference="ywn-JX-SdR"/>
+                                <exclude reference="2Mk-UB-CuF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="8Gu-ZP-378"/>
-                                <include reference="8NK-Ir-ErP"/>
+                                <include reference="ywn-JX-SdR"/>
+                                <include reference="2Mk-UB-CuF"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="chartViewParent" destination="8Gu-ZP-378" id="wlZ-sv-KCX"/>
+                        <outlet property="filterTextField" destination="2Mk-UB-CuF" id="dAN-Rq-gNW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

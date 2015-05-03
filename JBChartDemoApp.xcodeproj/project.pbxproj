@@ -17,7 +17,8 @@
 		D25F07431AF2EE5B00BCCA12 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D25F073E1AF2EE5B00BCCA12 /* JBBarChartView.m */; };
 		D25F07441AF2EE5B00BCCA12 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D25F07401AF2EE5B00BCCA12 /* JBChartView.m */; };
 		D25F07451AF2EE5B00BCCA12 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D25F07421AF2EE5B00BCCA12 /* JBLineChartView.m */; };
-		D25F07491AF2EEEB00BCCA12 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D25F07481AF2EEEB00BCCA12 /* Person.m */; };
+		D25F07491AF2EEEB00BCCA12 /* MeterReading.m in Sources */ = {isa = PBXBuildFile; fileRef = D25F07481AF2EEEB00BCCA12 /* MeterReading.m */; };
+		D274679D1AF68BB600B290DD /* names.plist in Resources */ = {isa = PBXBuildFile; fileRef = D274679C1AF68BB600B290DD /* names.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +51,9 @@
 		D25F07401AF2EE5B00BCCA12 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
 		D25F07411AF2EE5B00BCCA12 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
 		D25F07421AF2EE5B00BCCA12 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
-		D25F07471AF2EEEB00BCCA12 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		D25F07481AF2EEEB00BCCA12 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D25F07471AF2EEEB00BCCA12 /* MeterReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterReading.h; sourceTree = "<group>"; };
+		D25F07481AF2EEEB00BCCA12 /* MeterReading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterReading.m; sourceTree = "<group>"; };
+		D274679C1AF68BB600B290DD /* names.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = names.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				D25F071B1AF2EE2A00BCCA12 /* AppDelegate.m */,
 				D25F07171AF2EE2A00BCCA12 /* Info.plist */,
 				D25F07181AF2EE2A00BCCA12 /* main.m */,
+				D274679C1AF68BB600B290DD /* names.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,8 +153,8 @@
 		D25F07461AF2EED800BCCA12 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D25F07471AF2EEEB00BCCA12 /* Person.h */,
-				D25F07481AF2EEEB00BCCA12 /* Person.m */,
+				D25F07471AF2EEEB00BCCA12 /* MeterReading.h */,
+				D25F07481AF2EEEB00BCCA12 /* MeterReading.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D25F07221AF2EE2A00BCCA12 /* Main.storyboard in Resources */,
+				D274679D1AF68BB600B290DD /* names.plist in Resources */,
 				D25F07271AF2EE2A00BCCA12 /* LaunchScreen.xib in Resources */,
 				D25F07241AF2EE2A00BCCA12 /* Images.xcassets in Resources */,
 			);
@@ -265,7 +269,7 @@
 			files = (
 				D25F071F1AF2EE2A00BCCA12 /* ViewController.m in Sources */,
 				D25F07451AF2EE5B00BCCA12 /* JBLineChartView.m in Sources */,
-				D25F07491AF2EEEB00BCCA12 /* Person.m in Sources */,
+				D25F07491AF2EEEB00BCCA12 /* MeterReading.m in Sources */,
 				D25F07431AF2EE5B00BCCA12 /* JBBarChartView.m in Sources */,
 				D25F071C1AF2EE2A00BCCA12 /* AppDelegate.m in Sources */,
 				D25F07441AF2EE5B00BCCA12 /* JBChartView.m in Sources */,
@@ -464,6 +468,7 @@
 				D25F07381AF2EE2A00BCCA12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D25F07391AF2EE2A00BCCA12 /* Build configuration list for PBXNativeTarget "JBChartDemoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +477,7 @@
 				D25F073B1AF2EE2A00BCCA12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

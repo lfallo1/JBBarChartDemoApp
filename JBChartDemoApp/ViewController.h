@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "JBBarChartView.h"
 #import "JBChartView.h"
-#import "Person.h"
+#import "MeterReading.h"
 
 @interface ViewController : UIViewController <JBBarChartViewDelegate, JBBarChartViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITextField *filterTextField;
 
 @end
 
